@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>SMS Initiate</title>
@@ -8,5 +9,15 @@
 <h1>Testing SMS Link</h1>
 <a href="sms:+16503809575">Send SMS mobile only</a>
 
+<script type="text/javascript" src="http://smeeckaert.github.io/sms-link/sms-link.min.js">
+	document.addEventListener('DOMContentLoaded', (function () {
+    link = new SMSLink.link();
+    link.replaceAll();
+}), false);  	
+	
+	</script>
+  
+  
+  
 </body>
 </html>
