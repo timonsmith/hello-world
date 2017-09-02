@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1>Testing SMS Link [testing change]</h1>
+<h1>Testing SMS Link</h1>
 <a href="sms:+16503809575&body=Your child is at _____ location">Send SMS mobile only</a>
 
 <script type="text/javascript" src="http://smeeckaert.github.io/sms-link/sms-link.min.js">
@@ -16,6 +16,8 @@
 }), false);
 
 </script>
+
+<a href="tel:1-650-380-9575">Call lost child's parents</a>
 
 <script type="text/javascript">
 // Get the current location
@@ -29,6 +31,9 @@
 
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
+
+	document.write(latitude, longitude);
+
 </script>
 
 </body>
