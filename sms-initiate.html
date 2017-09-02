@@ -16,6 +16,20 @@
 }), false);  	
 	
 </script>
-    
+   
+<script type="text/javascript"> 		
+// Get the current location
+    navigator.geolocation.getCurrentPosition(showMap);
+// Your callback function—the showMap function in this example—should take a position object as the parameter as follows:
+
+    function showMap(position) {
+      // Show a map centered at position
+    }
+// Use the coords instance variable of the passed-in position object to obtain the latitude and longitude coordinates as follows:
+
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+</script>	
+	
 </body>
 </html>
