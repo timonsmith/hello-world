@@ -6,18 +6,18 @@
 </head>
 <body>
 
-<h1>Testing SMS Link</h1>
+<h1>Testing SMS Link [testing change]</h1>
 <a href="sms:+16503809575&body=Your child is at _____ location">Send SMS mobile only</a>
 
 <script type="text/javascript" src="http://smeeckaert.github.io/sms-link/sms-link.min.js">
 	document.addEventListener('DOMContentLoaded', (function () {
     link = new SMSLink.link();
     link.replaceAll();
-}), false);  	
-	
+}), false);
+
 </script>
-   
-<script type="text/javascript"> 		
+
+<script type="text/javascript">
 // Get the current location
     navigator.geolocation.getCurrentPosition(showMap);
 // Your callback function—the showMap function in this example—should take a position object as the parameter as follows:
@@ -29,7 +29,7 @@
 
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
-</script>	
-	
+</script>
+
 </body>
 </html>
