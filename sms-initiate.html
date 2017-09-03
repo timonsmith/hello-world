@@ -21,7 +21,7 @@
     	if (navigator.geolocation) {
 			document.write('<br>navigator.geolocation true');
 			navigator.geolocation.getCurrentPosition(showPosition);
-			document.write('just got geolocation');
+			document.write('<br>just got geolocation');
     	} else {
         	x.innerHTML = "Geolocation is not supported by this browser.";
 			document.write('else');
@@ -34,7 +34,7 @@ function showPosition(position) {
 document.write('<br>getting location')
 getLocation();
 document.write('<br>showing position')
-showPosition();
+showPosition(position);
 </script>
 
 <p></p>
