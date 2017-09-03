@@ -24,12 +24,14 @@
 			document.write('just got geolocation');
     	} else {
         	x.innerHTML = "Geolocation is not supported by this browser.";
+			document.write('else')
     }
 }
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
 }
+showPosition();
 </script>
 
 <p></p>
