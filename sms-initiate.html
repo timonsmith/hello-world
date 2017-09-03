@@ -14,8 +14,6 @@
 
 <p id="phone"></p><a href="tel:1-650-380-9575">Call lost child's parents</a><br><br>
 
-<button onclick="getLocation()">Try It</button>
-
 <p id="demo"></p>
 
 <script>
@@ -31,10 +29,12 @@
         	x.innerHTML = "Geolocation is not supported by this browser.";
 			//document.write('else');
     }
+	getLocation()
 }
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
 }
+ShowPosition(position);
 //document.write('<br>getting location')
 //getLocation();
 //document.write('<br>showing position')
