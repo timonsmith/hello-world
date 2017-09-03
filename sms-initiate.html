@@ -7,11 +7,12 @@
 <body>
 
 <h1>Testing SMS Link</h1>
+<p id="sms"></p>
 <a href="sms:+16503809575&body=Your child is at _____ location">Send SMS mobile only</a>
 
 </script>
 
-<p></p><a href="tel:1-650-380-9575">Call lost child's parents</a><br><br>
+<p id="phone"></p><a href="tel:1-650-380-9575">Call lost child's parents</a><br><br>
 
 <button onclick="getLocation()">Try It</button>
 
@@ -42,14 +43,14 @@ function showPosition(position) {
 
 <p></p>
 
-<p id="demo">Click the button to get your position and display on a map.</p>
+<p id="demo2">Click the button to get your position and display on a map.</p>
 
 <button onclick="getLocation()">Try It</button>
 
 <div id="mapholder"></div>
 
 <script>
-var x = document.getElementById("demo");
+var x = document.getElementById("demo2");
 
 function getLocation() {
     if (navigator.geolocation) {
