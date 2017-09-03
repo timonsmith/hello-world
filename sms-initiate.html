@@ -14,12 +14,12 @@
 <p></p><a href="tel:1-650-380-9575">Call lost child's parents</a><br><br>
 
 <script>
-	document.write('in geolocation script.');
+	document.write('<br>in geolocation script.');
 	var x = document.getElementById("demo");
-	document.write('just passed getElementById');
+	document.write('<br>just passed getElementById');
 	function getLocation() {
     	if (navigator.geolocation) {
-			document.write('navigator.geolocation true');
+			document.write('<br>navigator.geolocation true');
 			navigator.geolocation.getCurrentPosition(showPosition);
 			document.write('just got geolocation');
     	} else {
