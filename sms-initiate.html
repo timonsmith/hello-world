@@ -15,38 +15,27 @@
     link.replaceAll();
 }), false);
 	var number = 123;
-	alert(number);
-	alert("First Script - Hello-world");
+	document.write("First Script - Hello-world");
 </script>
 
-<p></p><a href="tel:1-650-380-9575">Call lost child's parents</a>
+<p></p><a href="tel:1-650-380-9575">Call lost child's parents</a><br><br>
 
-<script type="text/javascript">
-// Get the current location
-    var position = navigator.geolocation.getCurrentPosition(showMap);
-// Your callback function—the showMap function in this example—should take a position object as the parameter as follows:
-
-    function showMap(position) {
-      // Show a map centered at position
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
     }
-// Use the coords instance variable of the passed-in position object to obtain the latitude and longitude coordinates as follows:
-
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
-	var number = 123;
-	alert("before number");
-	document.write(number);
-	document.write(latitude);
-	document.write(longitude);
-	document.write("Hello-world");
-
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
 </script>
+
 <p></p>
-
-<script type="text/javascript">
-  var number = 123;
-  document.write(number);
-</script>
 
 </body>
 </html>
