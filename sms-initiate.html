@@ -20,10 +20,12 @@
 <p></p><a href="tel:1-650-380-9575">Call lost child's parents</a><br><br>
 
 <script>
+	document.write('in geolocation script.');
 	var x = document.getElementById("demo");
 	function getLocation() {
     	if (navigator.geolocation) {
         	navigator.geolocation.getCurrentPosition(showPosition);
+			document.write('just got geolocation');
     	} else {
         	x.innerHTML = "Geolocation is not supported by this browser.";
     }
